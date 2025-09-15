@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  font-family: Roboto;
+}
+body{
+  /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+  min-height: 100vh;
+  
+}
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+nav{
+  background-color: white;
+  width: 100%;
+  padding: 0 3%;
+  box-shadow: 2px 0px 2px black;
+}
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+nav ul li{
+  height: 6.8rem;
+  margin-right: 2rem;
+}
+nav ul a{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.navbar_logo{
+  margin-right: auto;
+}
+.navbar_logo a{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.navbar_link:hover{
+  color: #106AB8;
+}
+.accouctbtn{
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(255, 75, 68);
+}
+.accouctbtn a{
+  color: white;
+
+}
+.accouctbtn:hover{
+  background-color: rgba(255, 74, 68, 0.781);
+}
+.sideBarIcon{
+  display: none;
+}
+
+.sideBar{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.548);
+  backdrop-filter: blur(10px);
+  justify-content: flex-start;
+  z-index: 1000;
+}
+.displaySideBar{
+  display: flex;
+}
+.sideBar li{
+  width: 100%;
+  padding: 0 10%;
+}
+.sideBar li a{
+  width: 100%;
+}
+.navbar_close a{
+  justify-content: flex-end;
+}
+/* header End */
+main{
+  margin-top: 6.8rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/* topBanner star */
+.topBanner{
+  width: 100%;
+  background-color: rgb(255, 75, 68);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10rem;
+}
+.bannerContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 0 2rem 0;
+  color: white;
+}
+.headine{
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+}
+.Subtext{
+  font-size: 2rem;
+  text-align: center;
+}
+.sectionBtn{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FECB2F;
+}
+.bannerImageContainer{
+  max-width: 50rem;
+  border: 2px solid red;
+}
+.bannerImageContainer div{
+  width: 100%;
+  /* transform: rotate(350deg); */
+  transform: scaleX(-1);
+}
+.bannerImageContainer div img{
+  width: 100%;
+}
+
+/* featured prediction start */
+.feuturedPredictionSection{
+  
+}
+.PredictionCotainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  row-gap: 2rem;
+}
+.subHeadings{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.predictionsCardCTN{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+.predictionCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px solid white;
+  background-image: linear-gradient(rgba(255, 74, 68, 0.13)), url('/images/guzman-barquin-WqMWXqXR-HA-unsplash.jpg');
+  color: white;
+  width: 26.8172rem;
+}
+.cludLogoContainer{
+  width: 15rem;
+  height: 15rem;
+}
+.cludLogoContainer img{
+  width: 100%;
+  height: 100%;
+}
+.clubName{
+  font-weight: 600;
+  color: white;
+}
+
+/* why us section start */
+.whyUsSection{
+  background-color: rgb(255, 75, 68);
+  background-image: linear-gradient(rgba(255, 74, 68, 0.863)), url('/images/guzman-barquin-WqMWXqXR-HA-unsplash.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  color: white;
+  row-gap: 1rem;
+}
+.whyCardContainer{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ gap: 2rem;
+}
+.whyUsCard{
+ border-radius: 10px;
+ /* background: rgb(0, 212, 214); */
+ background-color: rgb(255, 75, 68);
+
+ color: black;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ width: 20rem;
+ height: 18.2rem;
+ padding: 2rem;
+ row-gap: 1rem;
+ color: white;
+}
+.whyUsCard .icons{
+ font-size: 8rem;
+ font-weight: bold;
+}
+.whyUsCard .text{
+ font-size: 2rem;
+}
+
+/* testimonial section */
+.testimonialSection{
+}
+.testimonialContainer{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  background-image: url('/images/guzman-barquin-WqMWXqXR-HA-unsplash.jpg');
+  color: white;
+}
+.testimonialSection .userName{
+  font-size: 1.5rem;
+}
+
+
+/* blog and news section */
+.blogSection{
+  /* background-image: linear-gradient(rgba(255, 74, 68, 0.849)), url('/images/paul-schneider-NZkcNjgBOq0-unsplash.jpg');
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.blogContainer{
+  background-image: linear-gradient(rgba(255, 74, 68, 0.849)), url('/images/paul-schneider-NZkcNjgBOq0-unsplash.jpg');
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  padding: 2rem;
+}
+.blogText{
+  font-size: 2rem;
+}
+
+/* NEWSLETTER */
+.NewsLetterContainer{
+  /* margin-top: 2rem; */
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  padding: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.NewsLetterContainer button{
+  padding: 1.5rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.NewsLetterContainer .inputCtn {
+  width: 80%;
+}
+.NewsLetterContainer .inputCtn input{
+  padding: 1rem;
+  width: 100%;
+
+}
+
+/* footer */
+footer{
+  background-color: rgba(0, 0, 0, 0.973);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.footer-top{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.footer-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  font-size: 5rem;
+}
+.footer-items{
+  /* min-width: 30rem; */
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-title{
+  font-size: 3rem;
+  font-weight: bold;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer input{
+  height: 3rem;
+}
+footer button{
+  padding: 1.5rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.55rem;
+  font-weight: bold;
+}
+.footer-disclaimer{
+  margin-top: 5rem;
+  font-size: 2rem;
+  background-color: black;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+}
+.footer-disclaimer b{
+  color: red;
+  font-size: 3rem;
+}
+.footer-disclaimer span{
+  color: orange;
+}
+
+/* responsivenes*/
+@media(max-width: 940px){
+  .hideOnMobile{
+    display: none;
+  }
+  .sideBarIcon{
+    display: initial;
+  }
+}
+@media (max-width:700px) {
+  html{
+    font-size: 50%;
+  }
+  /* .footer-title{
+    font-size: 2rem;
+  } */
+}
