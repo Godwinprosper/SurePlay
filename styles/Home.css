@@ -4,6 +4,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root{
+  --ash-Color: rgb(234, 234, 234);
+  --orange-color: rgb(255, 75, 68);
+}
 html{
   font-size: 62.5%;
   font-family: Roboto;
@@ -161,57 +165,167 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
 }
 .subHeadings{
   font-size: 3rem;
   font-weight: bold;
-  text-align: center;
-}
-.predictionsCardCTN{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-  justify-content: center;
-}
-.predictionCard{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  gap: 2rem;
-  font-size: 2rem;
-  text-align: center;
-  border-radius: 10px;
-  border: 3px solid white;
-  background-image: linear-gradient(rgba(255, 74, 68, 0.13)), url('../images/guzman-barquin-WqMWXqXR-HA-unsplash.jpg');
-  color: white;
-  width: 26.8172rem;
-}
-.cludLogoContainer{
-  width: 15rem;
-  height: 15rem;
-}
-.cludLogoContainer img{
+  text-align: left;
   width: 100%;
-  height: 100%;
-}
-.clubName{
-  font-weight: 600;
-  color: white;
 }
 
+
+/* prediction secton 2 */
+.predictionCardContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.match-card{
+  display: flex;
+  flex-direction: column;
+  min-width: 30rem;
+  border: 1px solid var(--ash-Color);
+  font-size: 1.5rem;
+}
+.match-card_datetime{
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 12px;
+  justify-content: space-between;
+  background-color: rgb(234, 234, 234);
+}
+.match-card-body{
+  display: flex;
+  align-items: center;
+}
+.match-card_teams{
+  display: flex;
+  flex-direction: column;
+}
+.match-card__teams-top{
+  display: flex;
+  padding: 2rem 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.match-card_team{
+  display: flex;
+  align-items: center;
+}
+.match-card_team-name{
+  padding: 0 5px;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+.match-card_team-logo{
+  width: 25px;
+  height: 25px;
+}
+.match-card_team-logo img{
+  width: 100%;
+  height:100%;
+}
+.match-card_league{
+  padding: 15px;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.horizontal-line{
+  height: 100px;
+  width: 2px;
+  background-color: var(--ash-Color);
+  margin: 0 10px;
+}
+.match-card-actions-ctn{
+  padding-top: 11px;
+}
+.match-card-action{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+}
+.match-card_cta{
+  padding: 12px;
+  text-align: center;
+  background-color: rgb(255, 75, 68);
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+/* featured prediction end */
+
+/* news section */
+.news-ctn{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.news-card-ctn{
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+.news-card{
+  min-width: 50rem;
+  border: 2px solid var(--ash-Color);
+}
+.img-ctn{
+  width: 100%;
+  height: 30rem;
+}
+.img-ctn img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news-detail{
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 19.5rem;
+}
+.news-category{
+  background-color: var(--orange-color);
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: white;
+  margin-bottom: 1rem;
+}
+.new-publicationDate{
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+.news-title{
+  font-size: 2rem;
+  font-weight: bold;
+  /* margin-top: auto; */
+}
+.reed-news, .reed-news a{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: var(--orange-color);
+  margin-top: auto;
+}
 /* why us section start */
 .whyUsSection{
-  background-color: rgb(255, 75, 68);
-  background-image: linear-gradient(rgba(255, 74, 68, 0.863)), url('../images/guzman-barquin-WqMWXqXR-HA-unsplash.jpg');
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 0;
-  color: white;
+  color: black;
   row-gap: 1rem;
+  padding: 2rem;
 }
 .whyCardContainer{
  display: flex;
@@ -222,9 +336,7 @@ main{
 }
 .whyUsCard{
  border-radius: 10px;
- /* background: rgb(0, 212, 214); */
- background-color: rgb(255, 75, 68);
-
+ background-color: var(--ash-Color);
  color: black;
  display: flex;
  flex-direction: column;
@@ -233,7 +345,6 @@ main{
  height: 18.2rem;
  padding: 2rem;
  row-gap: 1rem;
- color: white;
 }
 .whyUsCard .icons{
  font-size: 8rem;
@@ -391,6 +502,7 @@ footer button{
 .footer-disclaimer span{
   color: orange;
 }
+
 
 /* responsivenes*/
 @media(max-width: 940px){
