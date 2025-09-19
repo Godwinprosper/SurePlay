@@ -54,6 +54,12 @@ nav ul a{
 .navbar_logo a{
   font-size: 2.5rem;
   font-weight: bold;
+  width: 100px;
+}
+.navbar_logo img{
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 .navbar_link:hover{
   color: #106AB8;
@@ -139,11 +145,10 @@ main{
   font-size: 2rem;
   text-align: center;
 }
-.sectionBtn{
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #FECB2F;
+.view-prediction{
+  color: var(--orange-color);
+  font-size: 1.6rem;
+  font-weight: bolder;
 }
 .bannerImageContainer{
   max-width: 50rem;
@@ -155,6 +160,13 @@ main{
 }
 .bannerImageContainer div img{
   width: 100%;
+}
+.sectionBtn{
+  background-color: orange;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
 }
 
 /* featured prediction start */
@@ -178,6 +190,7 @@ main{
 
 /* prediction secton 2 */
 .predictionCardContainer{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -321,116 +334,104 @@ main{
   color: var(--orange-color);
   margin-top: auto;
 }
-/* why us section start */
-.whyUsSection{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 0;
-  color: black;
-  row-gap: 1rem;
-  padding: 2rem;
-}
-.whyCardContainer{
- display: flex;
- flex-wrap: wrap;
- align-items: center;
- justify-content: center;
- gap: 2rem;
-}
-.whyUsCard{
- border-radius: 10px;
- background-color: var(--ash-Color);
- color: black;
- display: flex;
- flex-direction: column;
- text-align: center;
- width: 20rem;
- height: 18.2rem;
- padding: 2rem;
- row-gap: 1rem;
-}
-.whyUsCard .icons{
- font-size: 8rem;
- font-weight: bold;
-}
-.whyUsCard .text{
- font-size: 2rem;
-}
+/* news section end */
 
-/* testimonial section */
-.testimonialSection{
+/* about and newsteller section */
+.about-newsteller-ctn{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
 }
-.testimonialContainer{
+.about-ctn{
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-  font-size: 2rem;
-  background-image: url('../images/guzman-barquin-WqMWXqXR-HA-unsplash.jpg');
+  row-gap: 15px;
+  min-width: 400px;
+  flex: 1;
+  border: 1px solid var(--ash-Color);
+  border-top: 3px solid var(--orange-color);
+  padding: 20px 15px;
+}
+.newsTeller-ctn{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 460.703px;
+}
+.about-ctn p{
+  font-size: 1.6rem;
+}
+.about-ctn ol{
+  padding-left:25px;
+  list-style: disc;
+}
+.about-ctn li{
+  font-size: 1.6rem;
+}
+strong{
+  margin-top: 10px;
+}
+.newsteller-top{
+  padding: 20px;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+  background-color: var(--orange-color);
   color: white;
+  border-bottom: 3px solid black;
 }
-.testimonialSection .userName{
-  font-size: 1.5rem;
+.newsteller-top h3{
+  margin-bottom: 15px;
+  font-weight: bolder;
 }
-
-
-/* blog and news section */
-.blogSection{
-  /* background-image: linear-gradient(rgba(255, 74, 68, 0.849)), url('/images/paul-schneider-NZkcNjgBOq0-unsplash.jpg');
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
+.newsteller-top p{
+  font-size: 1.6rem;
+  text-wrap: wrap;
 }
-.blogContainer{
-  background-image: linear-gradient(rgba(255, 74, 68, 0.849)), url('../images/paul-schneider-NZkcNjgBOq0-unsplash.jpg');
-  background-position: center;
-  color: white;
+.newsteller-bottom{
+  box-shadow: 1px 0px 5px var(--ash-Color);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  row-gap: 2rem;
-  padding: 2rem;
+  row-gap: 15px;
+  padding: 15px 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-.blogText{
-  font-size: 2rem;
+.newsteller-bottom .email{
+  height: 50px;
+  padding: 10px;
 }
-
-/* NEWSLETTER */
-.NewsLetterContainer{
-  /* margin-top: 2rem; */
-  background-color: rgb(234, 234, 234);
+.newsteller-bottom .mid-section{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  row-gap: 2rem;
-  padding: 2rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  justify-content: space-between;
 }
-.NewsLetterContainer button{
-  padding: 1.5rem;
-  background-color: red;
+.mid-right{
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.mid-right input{
+  height: 16px;
+  margin-right: 15px;
+}
+.mid-section button{
+  padding: 10px;
   color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 2rem;
   font-weight: bold;
+  background-color: red;
+  border: none;
+  border-radius: 4px;
 }
-.NewsLetterContainer .inputCtn {
-  width: 80%;
+.newsteller-bottom .bottom-section{
+  font-size: 1.3rem;
 }
-.NewsLetterContainer .inputCtn input{
-  padding: 1rem;
+.Ads{
   width: 100%;
-
 }
+.Ads img{
+  width: 100%;
+}
+
 
 /* footer */
 footer{
@@ -446,65 +447,48 @@ footer{
   color: white;
   font-size: 1.5rem;
   margin-top: 6rem;
-  margin-bottom: 1rem;
-  width: 100%;
+  margin-bottom: 5rem;
+  max-width: 80%;
 }
-.footer-top{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 4rem;
+.footerLogo-Ctn{
+  height:150px;
+  width: 200px;
 }
-.footer-logo{
+.footerLogo-Ctn img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+  object-position: center;
+}
+footer .social-media{
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-.logo{
-  font-size: 5rem;
-}
-.footer-items{
-  /* min-width: 30rem; */
-  /* border: 2px solid red; */
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.footer-title{
+
+footer .social-media span{
   font-size: 3rem;
-  font-weight: bold;
+  margin-left:2rem;
 }
-footer a{
+.footer-detail{
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.footer-detail a{
   text-decoration: none;
   color: white;
 }
-footer input{
-  height: 3rem;
+footer hr{
+  width: 80vw;
+  height: 2px;
+  margin-top: 20px;
+  background-color: white;
 }
-footer button{
-  padding: 1.5rem;
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.55rem;
-  font-weight: bold;
-}
-.footer-disclaimer{
-  margin-top: 5rem;
-  font-size: 2rem;
-  background-color: black;
-  border-radius: 10px;
-  padding: 2rem;
+.disclaimer {
   text-align: center;
-}
-.footer-disclaimer b{
-  color: red;
-  font-size: 3rem;
-}
-.footer-disclaimer span{
-  color: orange;
+  /* padding: 30px; */
 }
 
 
@@ -516,12 +500,30 @@ footer button{
   .sideBarIcon{
     display: initial;
   }
+  
 }
+@media (max-width: 767px){
+  .about-newsteller-ctn{
+    flex-direction: column;
+  }
+  .about-ctn{
+    min-width: 0;
+  }
+  .newsTeller-ctn{
+    width: 100%;
+  }
+}
+
 @media (max-width:700px) {
   html{
     font-size: 50%;
   }
-  /* .footer-title{
-    font-size: 2rem;
+}
+@media (max-width: 617px){
+  /* .match-card{
+    width: 100%;
+  }
+  .match-card_teams{
+    flex: 1;
   } */
 }
