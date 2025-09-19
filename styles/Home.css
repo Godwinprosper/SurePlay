@@ -147,8 +147,10 @@ main{
 }
 .view-prediction{
   color: var(--orange-color);
-  font-size: 1.6rem;
+  font-size: 2rem;
+  text-decoration: underline;
   font-weight: bolder;
+  margin-top: 2rem;
 }
 .bannerImageContainer{
   max-width: 50rem;
@@ -202,6 +204,7 @@ main{
   min-width: 30rem;
   border: 1px solid var(--ash-Color);
   font-size: 1.5rem;
+  border-top:2px solid var(--orange-color) ;
 }
 .match-card_datetime{
   display: flex;
@@ -209,7 +212,8 @@ main{
   font-weight: bold;
   padding: 12px;
   justify-content: space-between;
-  background-color: rgb(234, 234, 234);
+  /* background-color: rgb(234, 234, 234); */
+  background-color: white;
 }
 .match-card-body{
   display: flex;
@@ -249,8 +253,8 @@ main{
 }
 .match-card_league{
   padding: 15px;
-  font-size: 2rem;
-  font-weight: bolder;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .horizontal-line{
   height: 100px;
@@ -271,8 +275,8 @@ main{
 .match-card_cta{
   padding: 12px;
   text-align: center;
-  background-color: rgb(255, 75, 68);
-  color: white;
+  /* background-color: rgb(255, 75, 68); */
+  color: black;
   font-size: 2rem;
   font-weight: bolder;
 }
@@ -322,10 +326,11 @@ main{
   font-size: 12px;
   margin-bottom: 1rem;
 }
-.news-title{
+.news-title a{
   font-size: 2rem;
   font-weight: bold;
-  /* margin-top: auto; */
+  text-decoration: none;
+  color: black;
 }
 .reed-news, .reed-news a{
   font-size: 1.5rem;
@@ -466,14 +471,16 @@ footer .social-media{
   align-items: center;
 }
 
-footer .social-media span{
+footer .social-media span a{
   font-size: 3rem;
   margin-left:2rem;
+  color: white;
 }
 .footer-detail{
   display: flex;
   gap: 2rem;
   margin-top: 3rem;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .footer-detail a{
